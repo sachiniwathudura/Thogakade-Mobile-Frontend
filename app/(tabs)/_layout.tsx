@@ -47,7 +47,18 @@ function TabLayout() {
                     ),
                 }}
             />
+            <Tabs.Screen
+                name='placeOrder'
+                options={{
+                    headerTitle: 'placeOrder',
+                    title: 'placeOrder',
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="cart-outline" size={size} color={color} />
+                    ),
+                }}
+            />
         </Tabs>
+
     );
 }
 
