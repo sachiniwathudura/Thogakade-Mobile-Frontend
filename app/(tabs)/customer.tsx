@@ -4,6 +4,7 @@ import { useState } from "react";
 import ICustomer from "../../model/ICustomer";
 
 export default function Customer() {
+    const[customerId,setCustomerId] = useState(0);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
@@ -22,7 +23,7 @@ export default function Customer() {
             return;
         }
 
-        const newCustomer: ICustomer = { name, address, email };
+        const newCustomer: ICustomer = { customerId,name, address, email };
         setCustomer([...customer, newCustomer]);
 
         // Clear input fields after submission

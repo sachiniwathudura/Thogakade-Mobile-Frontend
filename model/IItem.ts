@@ -1,5 +1,5 @@
 export default interface IItem {
-    code:string;
+    code:number;
     name: string;
     quantity: number;
     price: number;
